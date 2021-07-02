@@ -1,0 +1,20 @@
+.container-home{
+    height: 70vh;
+    background-image: linear-gradient(rgb(44,62,80),rgb(44,62,80)) ;
+}
+.h1-home{
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(239,241,242);
+    font-family: 'Roboto', sans-serif;
+}
+.logo-home{
+    top: -3em;
+    position: relative;
+    margin-left: -1em;
+}
+.button-delete-count{
+    position: absolute;
+    left: 5px;
+    top: 20px;
+}
