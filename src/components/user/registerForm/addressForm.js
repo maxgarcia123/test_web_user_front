@@ -85,13 +85,13 @@ export default function AddressForm() {
                 <Grid item xs={12} sm={6}>
                     <TextField
                         value={postalCode}
-                        id="cep"
-                        name="cep"
+                        id="postalCode"
+                        name="postalCode"
                         label="CEP"
                         fullWidth
                         onChange={(e) => setPostalCode(e.target.value)}
                         inputProps={{
-                            maxLength: 8,
+                            maxLength: 10,
                         }}
                     />
                 </Grid>

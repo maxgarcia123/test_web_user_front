@@ -47,7 +47,7 @@ const SignInForm = ({setUser, setPassword, singIn}) => {
                     <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                    Entrar no Sistema
+                    Olá visitante
                 </Typography>
                 <form className={classes.form} noValidate>
                     <TextField

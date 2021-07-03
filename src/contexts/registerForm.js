@@ -48,13 +48,13 @@ export const RegisterFormProvider = ({ children }) => {
             setErrorPassword(true);
         }else if(password === rePassword || rePassword.length === 0){
             setErrorPassword(false);
-        }else if(postalCode.length === 8 ){
+        }if(postalCode.length === 8 ){
+            console.log('cep',maskPostalCode(postalCode));
             setPostalCode(maskPostalCode(postalCode));
         }
     }, [cpf,postalCode, rePassword])
 
     const registerUser = async () => {
-        console.log('update', !user_id)
         const data = {
             id: user_id,
             name,
@@ -101,7 +101,7 @@ export const RegisterFormProvider = ({ children }) => {
                 setOpenAlert(true);
                 return setTimeout(() => {
                     setOpenAlert(false);
-                }, [2000]);
+                }, [3500]);
             })
         }else if(!errorCpf && !errorPassword && !!user_id){
             await api.put('/user',data).then((res) => {
